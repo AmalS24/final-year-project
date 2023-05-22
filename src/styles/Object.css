@@ -1,0 +1,120 @@
+
+.main-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montaga', serif;
+}
+.model-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 50%;
+    height: 100%;
+}
+.model-output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:auto;
+    height:500px;
+    /* background:white; */
+    margin-left: 20%;
+    border-radius: 5px;
+    padding: 0% 3% 0% 3%;
+    gap:3%;
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; */
+}
+.frame-container{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    padding: 1%;
+    gap:10px;
+    width: auto;
+    height: 70%;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+.frames{
+    width: 105px;
+    height:105px;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    object-fit: cover;
+}
+.status{
+    width: 93%;
+    padding: 5% 0% 2% 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+.progress{
+    max-width: 93%;
+    width: 99%;
+    height: 1%;
+    background: #434ddb;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.model-input{
+    width:460px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: white; */
+    margin-left: 20%;
+    border-radius: 5px;
+}
+.description{
+    width:50%;
+    height:100%;
+    display: flex;
+    font-size: 25px;
+    justify-content: end;
+    align-items: center;
+}
+.desc-content{
+    margin-right: 20%;
+    text-align: right;
+}
+h2{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+input{
+    font-size: 18px;
+}
+.btn{
+    color:white;
+    background: #434ddb;
+    padding:5px 10px 5px 10px;
+    border: transparent;
+    font-size: 16px;
+    width: auto;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Montaga', serif;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: #676fdb;
+}
+*::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+
+*:-webkit-scrollbar-thumb {
+    background: slategrey;
+    border-radius: 10px;
+    visibility: hidden;
+    /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  }
+
