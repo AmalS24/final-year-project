@@ -7,28 +7,18 @@ const Object = () => {
       <div className="model-box">
         <div className="model-output">
           <div className="frame-container">
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            <img src="https://play-lh.googleusercontent.com/HU1ZgZGlPGKMErtiuyUPxbyUqWoESZkgpNe8G4JsErnT8H7jUo3veZchqbVCNNq_sg" className="frames" alt="frame"/>
-            
+          <img
+    src="http://localhost:5000/video_feed"
+    alt="Video"
+    width={470}
+    // height={}
+   />
           </div>
-          <div className="status">
+          {/* <div className="status">
             <p>🎞️ 234/4435</p>
             <p>80%:Running...</p>
             <p>📦Objects X 23</p>
-          </div>
-          <div className="progress"></div>
+          </div> */}
         </div>
         <div className="model-input">
           <input type="file" />
@@ -41,16 +31,15 @@ const Object = () => {
         
         <p className="desc-content">
           <h2>OBJECT DETECTION</h2>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          The object detection model looks through out the video
+          taking each frame by frame, and grabs each object and keeps 
+          a list of all the infered object thereby allowing 
+          the user to look for a particular item within the video
+          The results from feed appper here ...
         </p>
+        <div className="object-list">
+
+        </div>
       </div>
     </div>
   );
